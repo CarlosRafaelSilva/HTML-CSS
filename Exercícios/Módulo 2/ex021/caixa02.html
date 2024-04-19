@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(187, 184, 184);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{ /*cabeçalho*/
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            box-shadow: inset 2px 1px 12px 6px rgba(0, 0, 0, 0.556);
+        }
+        nav{ /* nav de navegação*/
+            background-color: rgb(146, 144, 144);
+            padding: 3px;
+            font-weight: bold;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.639); /*deslocam.horizontal, deslocam.vertical, embaçamento, espalhamento*/
+        }
+        nav > a{
+            text-decoration: none;
+            margin-right: 3px;
+        }
+        nav >a:hover{
+            text-decoration: underline;
+        }
+        main{ /*conteúdo principal*/
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 4px 0px black;
+        }
+        section#assuntos a {
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px;
+            color: rgb(3, 3, 175); /* Define a cor inicial do texto */
+            transition: 0.3s; /* Transição suave de cor */
+        }
+        section#assuntos a:hover {
+            color: rgb(255, 213, 0); /* Altera a cor do texto para amarelo */
+        }
+        section >p:hover{
+            text-decoration: underline;
+        }
+        section >a{
+            text-decoration: none;
+            padding: 10px;
+        }
+        article{ /*artigo*/
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(146, 144, 144);
+        }
+        footer{ /*rodapé*/
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer >p{
+            margin: 0px;
+        }
+        div#bola{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="#">Esporte</a>
+            <a href="#">Política</a>
+            <a href="#">Tecnologia</a>
+        </section>
+            <section id="notícias">
+                <article>
+                    <h2>Noticias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, hic earum impedit aperiam sed cumque, numquam fuga fugit deserunt vero quasi amet? Nostrum molestias distinctio officia maiores odit commodi tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad fuga nulla unde alias cupiditate, mollitia, perspiciatis laudantium ipsum omnis dolorem adipisci amet aperiam exercitationem aspernatur tempora, iste inventore optio.</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+                </article>
+            </section>
+    </main>
+        <footer>
+            <p>Desenvolvido pelo CursoEmVideo</p>
+        </footer>
+        <div id="bola"></div>
+</body>
+</html>

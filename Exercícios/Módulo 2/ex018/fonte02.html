@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {   /*dafont.com (Para baixar fonts no PC)*/
+            font-family: 'Love'; /* <-- pode dar o nome que quiser*/
+            src: url('fonts/love story ttf.ttf') format('truetype');
+            /*
+            tipos de "format()"
+             -opentype (otf)
+             -truetype (ttf)
+             -truetype-aat (Apple advanced typography)
+             -embedded-opentype
+             -svg 
+            */
+            font-weight: normal;
+            font-style: normal; /*o font-weight e font-style aqui é pra dizer que o 'normal' funciona melhor nesse formato, mas ainda é bom declarar no body e no h1 e etc*/
+              
+        }
+        body{
+            background-color: rgb(254, 240, 212);
+            font-family: 'Love', Helvetica, sans-serif;
+            text-align: center;
+        }
+        h1{
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Love Story</h1>
+    <p>"O amor é a manifestação mais sublime da existência humana, um vínculo sagrado que transcende as barreiras do tempo e do espaço. É o eco eterno dos suspiros apaixonados, o brilho intenso nos olhos que reflete a magnitude do sentimento. É o calor reconfortante que envolve os corações em momentos de frieza, a luz radiante que ilumina os caminhos mais sombrios da jornada. É a sinfonia celestial que embala os sonhos mais profundos, a dança suave que une almas em um eterno abraço. É a inspiração para os versos mais belos, a motivação para as mais nobres ações. O amor é a própria essência da vida, pulsando em cada batida do coração e ecoando em cada suspiro de felicidade."</p>
+</body>
+</html>

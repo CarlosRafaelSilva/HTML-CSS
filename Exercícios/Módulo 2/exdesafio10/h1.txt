@@ -1,0 +1,4 @@
+<h1 style="text-align: center;">
+            <span style="color: #f4f4f4; line-height: 2.0; font-family:'Bebas Neue', sans-serif; font-size: 47px;">CURIOSIDADES DE TECNOLOGIA</span><br>
+            <span style="color: #d8d6d6; font-size: 18px;">Tudo aquilo que você sempre quis saber sobre o mundo <br>Tech, em um único lugar</span>
+        </h1>
