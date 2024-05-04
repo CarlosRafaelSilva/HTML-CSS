@@ -87,7 +87,7 @@ main p{
 .opaco{
     background-color: rgba(0, 0, 0, 0.412);
     display: inline-block;
-    width: 40vw;
+    
     padding: 5px 6px 5px 2px;
     margin: 50px 28px 50px 50px;
     color: rgba(255, 255, 255, 0.931);
