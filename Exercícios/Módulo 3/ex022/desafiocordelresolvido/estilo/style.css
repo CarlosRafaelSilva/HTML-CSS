@@ -53,7 +53,7 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    line-height: 2em;
+    /*line-height: 2em;*/ /*espaço entre cada linha/frase*/
     font-size: 3.5vw;
 }
 
@@ -65,18 +65,31 @@ section.normal{
 section.imagem{
     background-color: rgb(36, 36, 36);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.42);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > pre{
-    background-color: rgba(0, 0, 0, 0.289);
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 5px;
     display: inline-block; /*a caixa se adapta ao tamanho do texto*/
+    text-shadow: 1px 1px 0px black;
 }
 
 section > pre{
     white-space: pre-line;
-    font-family: var(--fonte3);   
+    font-family: var(--fonte3);  
 }
 
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+}
 footer{
     background-color: black;
     color: white;
