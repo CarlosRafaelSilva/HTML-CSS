@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        padding: 4px;
+    }
+}
+
+        @media screen and (min-width: 601px) {
+    table {
+        width: 30%;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 4px;
+        }
+        td:First-child {
+            text-align: center;
+            width: 1px;
+        }
+        td:nth-child(3) {
+            text-align: right;
+        }
+        tbody tr:nth-child(2n){ /* (2n) quer dizer: de 2 em 2 ele vai colocando uma tarja cinza (tbm funciona com 'even') OU se quiser iniciar com as linhas ímpares, pode substituir por (odd) ou (2n-1)*/
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #8e8e8e;
+        }
+        thead, tfoot{
+            background-color: #8e8e8e;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        Table:
+          Caption (legenda)
+            thead:
+                tr, td, th
+            tbody:
+                tr, td, th
+            tfoot:
+                tr, td, th
+    -->
+    <table>
+        <caption>Os 10 Estados Mais Populosos do Brasil</caption>
+        <thead>
+            <tr>
+                <!-- o parâmetro 'scope' é importante para que os mecanismos de busca da internet consigam analisar os dados da sua tabela de forma coerente, de forma que faça sentido. Tais parâmetros não causam nenhum resultado visual, mas é muito útil de um ponto de vista semântico.-->
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1°</td>
+                <td>São Paulo</td>
+                <td>44.420.459</td>
+            </tr>
+            <tr>
+                <td>2°</td>
+                <td>Minas Gerais</td>
+                <td>20.538.718</td>
+            </tr>
+            <tr>
+                <td>3°</td>
+                <td>Rio de Janeiro</td>
+                <td>16.054.524</td>
+            </tr>
+            <tr>
+                <td>4°</td>
+                <td>Bahia</td>
+                <td>14.136.417</td>
+            </tr>
+            <tr>
+                <td>5°</td>
+                <td>Paraná</td>
+                <td>11.443.208</td>
+            </tr>
+            <tr>
+                <td>6°</td>
+                <td>Rio Grande do Sul</td>
+                <td>10.880.506</td>
+            </tr>
+            <tr><td>7°</td>
+                <td>Pernambuco</td>
+                <td>9.058.155</td>
+            </tr>
+            <tr>
+                <td>8°</td>
+                <td>Ceará</td>
+                <td>8.791.688</td>
+            </tr>
+            <tr>
+                <td>9°</td>
+                <td>Pará</td>
+                <td>8.116.132</td>
+            </tr>
+            <tr>
+                <td>10°</td>
+                <td>Santa Perfeitinha</td>
+                <td>7.609.601</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>10</td>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>151.049.408</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</html>
