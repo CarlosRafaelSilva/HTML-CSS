@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*ajustou os botões das logos para que não empurrem uns aos outros*/
+}
+
+body{
+    background: url('imagens/fundo-madeira.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 95vw;
+    height: 95vh;
+    overflow: hidden;
+}
+
+main{
+    height: 110vh;
+    position: relative;
+}
+
+section#iphone{
+    background: url('imagens/frame-iphone.png') no-repeat;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 530px;
+    width: 240px; 
+    position: absolute;
+    background-size: contain;
+}
+
+iframe#tela{
+    position: relative;
+    top: 63px;
+    left: 18px;
+    width: 204.5px;
+    height: 362px;
+}
+
+section#redes-sociais{
+    text-align: right; 
+}
+
+section#redes-sociais img{
+    width: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    margin-right: -4vw;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    /*box-sizing: border-box;  invés de colocar aqui, coloque no Global*/
+    
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.717);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.543); /*o dobro dos valores do box-shadow acima p/ um efeito + legal*/
+    transition: duration 0.2s, border 0.1s; /*border para transição mais suave*/
+    transform: translate(-3px, -3px); /*-3px para esq, -3px para cima*/
+}

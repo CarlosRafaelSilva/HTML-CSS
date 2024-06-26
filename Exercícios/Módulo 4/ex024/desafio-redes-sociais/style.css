@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+    background: url('imagens/fundo-madeira.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 95vh;
+    width: 95vw;
+    position: relative; 
+}
+
+.iphone {
+    position: absolute;
+    background-position: center;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 20vw; 
+    max-width: 230px; 
+    min-width: 150px; 
+    height: auto;
+}
+
+iframe#tela{
+    position: relative;
+    top: 116px;
+    left: 577px;
+    width: 196.5px;
+    height: 347.5px;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-88%);
+}
+
+div.icone{
+    border: 0px solid black;
+    height: 40px;
+    width: 40px;
+    margin: 5px -50px 10px 0px;
+    border-radius: 50px;
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.62);
+    box-sizing: border-box; 
+}
+
+div.icone:hover{
+    border: 2px solid rgba(255, 255, 255, 0.742);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.535);
+    transition: duration: 0.2s, border 0.1s;
+}
+
+div#logohome{
+   background-image: url('imagens/logo-home.jpg');
+}
+div#logoyou{
+    background-image: url('imagens/logo-youtube.jpg');
+}
+div#logogit{
+    background-image: url('imagens/logo-github.jpg');
+}
+div#logoinst{
+    background-image: url('imagens/logo-instagram.jpg');
+}
+div#logotwt{
+    background-image: url('imagens/logo-twitter.jpg');
+}
+div#logoface{
+    background-image: url('imagens/logo-facebook.jpg');
+}
