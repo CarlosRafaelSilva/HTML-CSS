@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-   <h1>Meu primeiro formulário</h1> 
+   <h1>Meu Primeiro Formulário</h1>
+   <form action="cadastro.php" method="post" autocomplete="off"> <!-- 'autocomplete=off' caso não queira que ele sugira dados ao preencher-->
+   <!--o 'method=post' remove os nomes preenchidos no formulário na URL, mas não ocultam totalmente--> 
+    <p><label for="inome">Nome:</label> <!--label ajuda o navegador a saber qual caixa tá relacionada com qual label(elemento, controle)-->
+        <input type="text" name="nome" id="inome"> </p>
+    <p><label for="isobrenome">Sobrenome:</label> 
+        <input type="text" name="sobrenome" id="isobrenome"> </p>
+    <input type="submit" value="Enviar">
+   </form>
 </body>
 </html>
